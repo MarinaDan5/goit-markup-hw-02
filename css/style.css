@@ -2,49 +2,56 @@
   --primary-text-color: #757575;
   --title-text-color: #212121;
   --accent-color: #2196f3;
+  --secondary-text-color: #ffffff;
+  --main-font: Roboto, sans-serif;
+  --secondary-font: Raleway, sans-serif;
 }
-/* цвет основного текста #E5E5E5; */
-/* вторичный цвет текста #212121; */
-/* акцент #2196F3; */
-/* вторичный цвет фона #F5F4FA */
+
 .list {
   list-style: none;
 }
+.link {
+  text-decoration: none;
+}
+
 body {
   background-color: #e5e5e5;
-  color: #757575;
-  font-family: Roboto, sans-serif;
+  color: var(--primary-text-color);
+  font-family: var(--main-font);
   letter-spacing: 0.03em;
 }
+/*logo*/
 .logo {
-  color: #212121;
-  font-family: Raleway;
+  color: var(--title-text-color);
+  font-family: var(--secondary-font);
   font-size: 26px;
   line-height: 1.19;
   text-decoration: none;
 }
 .logo-part {
-  color: #2196f3;
+  color: var(--accent-color);
+}
+.logo-dark-theme {
+  color: var(--secondary-text-color);
 }
 /*site-nav*/
 .site-nav .link {
-  color: #212121;
+  color: var(--title-text-color);
   font-family: inherit;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  text-decoration: none;
 }
 .site-nav .link:hover,
 .site-nav .link:focus {
-  color: #2196f3;
+  color: var(--accent-color);
 }
 .site-nav .link.current {
-  color: #2196f3;
+  color: var(--accent-color);
 }
 .contact-nav .list {
-  color: #757575;
+  color: var(--primary-text-color);
   font-weight: 500;
   font-size: 14px;
   line-height: 1.2;
@@ -53,11 +60,11 @@ body {
 }
 .contact-nav .link:hover,
 .contact-nav .link:focus {
-  color: #2196f3;
+  color: var(--accent-color);
 }
 /*hero*/
 .hero-title {
-  color: #ffffff;
+  color: var(--secondary-text-color);
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -67,14 +74,14 @@ body {
 }
 /*button*/
 .button {
-  color: #ffffff;
-  background-color: #2196f3;
+  color: var(--secondary-text-color);
+  background-color: var(--accent-color);
   border-color: transparent;
   cursor: pointer;
 }
 /*features*/
 .features .title {
-  color: #212121;
+  color: var(--title-text-color);
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -87,14 +94,14 @@ body {
 
 /*section*/
 .section-title {
-  color: #212121;
+  color: var(--title-text-color);
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
 }
 .title-name {
-  color: #212121;
+  color: var(--title-text-color);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.88;
@@ -110,7 +117,7 @@ body {
   font-style: normal;
 }
 .address-title {
-  color: #ffffff;
+  color: var(--secondary-text-color);
   font-size: 14px;
   line-height: 1.71;
 }
@@ -120,8 +127,9 @@ body {
   line-height: 1.71;
 }
 /*Portfolio-project*/
+
 .work-project {
-  color: #212121;
+  color: var(--title-text-color);
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -132,7 +140,7 @@ body {
   line-height: 1.87;
 }
 .button-choise {
-  color: #212121;
+  color: var(--title-text-color);
   background-color: #f5f4fa;
   border-color: transparent;
   cursor: pointer;
@@ -144,6 +152,6 @@ body {
 }
 .button-choise:hover,
 .button-choise:focus {
-  color: #ffffff;
-  background-color: #2196f3;
+  color: var(--secondary-text-color);
+  background-color: var(--accent-color);
 }
