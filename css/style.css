@@ -35,7 +35,7 @@ body {
   color: var(--secondary-text-color);
 }
 /*site-nav*/
-.site-nav .link {
+.site-nav {
   color: var(--title-text-color);
   font-family: inherit;
   font-weight: 500;
@@ -50,16 +50,15 @@ body {
 .site-nav .link.current {
   color: var(--accent-color);
 }
-.contact-nav .list {
+.contact-nav {
   color: var(--primary-text-color);
   font-weight: 500;
   font-size: 14px;
-  line-height: 1.2;
+  line-height: 1.14;
   letter-spacing: 0.02em;
-  text-decoration: none;
 }
-.contact-nav .link:hover,
-.contact-nav .link:focus {
+.contact-nav:hover,
+.contact-nav:focus {
   color: var(--accent-color);
 }
 /*hero*/
@@ -125,6 +124,10 @@ body {
   color: rgba(255, 255, 255, 0.6);
   font-size: 14px;
   line-height: 1.71;
+}
+.title-info:focus,
+.title-info:hover {
+  color: var(--accent-color);
 }
 /*Portfolio-project*/
 
